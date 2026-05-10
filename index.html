@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <title>Mercadinho - Lista de Compras</title>
+    
+</head>
+<body>
+
+<div class="app-container">
+    <header>
+        <h1><i class="fa-solid fa-basket-shopping" style="color: rgb(207, 8, 8);"></i>Mercadinho</h1>
+    </header>
+
+    <div class="info-topo">
+        <input type="text" id="mercado" placeholder="Qual o mercado?">
+        <input type="date" id="data-compra">
+    </div>
+
+    <div class="list-container">
+        <div class="header-labels">
+            <span>Item</span>
+            <span>R$ Unid.</span>
+            <span>Qtd</span>
+            <span style="text-align: right;">Subtotal</span>
+            <span></span>
+        </div>
+        
+        <div id="lista-itens"></div>
+
+        <button class="btn-add" onclick="adicionarLinha()">+ Adicionar Produto</button>
+    </div>
+
+    <div class="footer-total">
+        <span>TOTAL DO CARRINHO</span>
+        <span id="total-geral" style="font-size: 1.4rem; font-weight: bold;">R$ 0,00</span>
+    </div>
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>
